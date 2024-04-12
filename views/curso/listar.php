@@ -1,3 +1,4 @@
+
 <div class="col">
     <a href="/cursos/adicionar" class="btn btn-success"><?= translate('new-course') ?></a>
 </div>

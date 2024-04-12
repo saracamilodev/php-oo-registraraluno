@@ -13,6 +13,7 @@ return [
     'text-confirm' => 'Pronto',
     'input-type-here' => 'Digite aqui',
     'new-course' => 'Novo Curso',
+    'new-student' => "Novo Aluno",
     'course-description' => 'Descrição',
     'status' => "Status",
     'student-name' => 'Nome',

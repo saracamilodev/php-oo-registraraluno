@@ -1,3 +1,7 @@
+<div class="col">
+    <a href="/alunos/adicionar" class="btn btn-success"><?= translate('new-student') ?></a>
+</div>
+<hr>
 <table class="table table-hover table-striped">
     <thead class="table-dark">
         <tr>

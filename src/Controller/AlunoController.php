@@ -20,4 +20,29 @@ final class AlunoController extends AbstractController
             'alunos' => $repository->findAll(),
         ]);
     }
+
+    public function add(): void
+    {
+        if (true === empty($_POST)) {
+            parent::render('alunos/adicionar');
+            return;
+        }
+
+        $aluno = new Aluno();
+        $aluno->name = $_POST['name'];
+        $aluno->cpf = $_POST['cpf'];
+        $aluno->email = $_POST['email'];
+        $aluno->registry = date('YmdHi');
+        $aluno->created_at = new \DateTime();
+
+        $entityManager = parent::entityManager();
+
+
+
+        //INSERT INTO
+        $entityManager->persist($aluno);
+        $entityManager->flush();
+
+        header('location: /alunos/adicionar');
+    }
 }
